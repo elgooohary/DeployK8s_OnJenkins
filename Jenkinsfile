@@ -6,7 +6,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/elgooohary/DeployK8s_OnJenkins'
+        git 'https://github.com/elgooohary/DeployK8s_OnJenkins.git'
       }
     }
 
