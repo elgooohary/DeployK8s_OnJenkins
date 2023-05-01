@@ -4,19 +4,6 @@ pipeline {
 
   stages {
 
-properties([parameters([choice(choices: ['main', 'feature_1'], description: 'Select desired branch to build', name: 'branches')])])
-
-node{
-
-stage('checkout from github') {
-
-echo "checking-out from branch ${params.branches}"
-
-git url: 'https://github.com/elgooohary/DeployK8s_OnJenkins.git', branch: "${params.branches}"
-
-}
-
-}
     stage('Checkout Source') {
       steps {
         git 'https://github.com/elgooohary/DeployK8s_OnJenkins.git'
