@@ -12,7 +12,7 @@ stage('checkout from github') {
 
 echo "checking-out from branch ${params.branches}"
 
-git url: 'https://github.com/elgooohary/DeployK8s_OnJenkins', branch: "${params.branches}"
+git url: 'https://github.com/elgooohary/DeployK8s_OnJenkins.git', branch: "${params.branches}"
 
 }
 
